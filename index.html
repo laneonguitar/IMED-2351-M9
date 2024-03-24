@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .container {
+          text-align: center;
+          margin-top: 50px;
+        }
+      </style>
+</head>
+<body>
+
+    <div class="API">
+        <h1>Stopwatch</h1> <!--Stopwatch API-->
+        <div id="display">00:00:00.00</div>
+        <button onclick="startStopwatch()">Start</button>
+        <button onclick="stopStopwatch()">Stop</button>
+        <button onclick="resetStopwatch()">Reset</button>
+      </div>
+
+      <div class="API"> 
+      <h2>Geolocation API Button</h2>  <!--Geolocation API-->
+        <button id="getLocationBtn">Click to Get Location</button>
+        <div id="locationDisplay"></div>
+        <div id="locationInfo"></div>
+        </div>
+      
+        
+        <div class="API">
+            <h2>JavaScript Web Workers API</h2>                  <!--Worker number counters start/stop-->
+        <p>Count numbers: <output id="result"></output></p>         
+        <button onclick="startWorker()">Start Worker</button> 
+        <button onclick="stopWorker()">Stop Worker</button>
+        
+        <p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support Web Workers.</p>
+        </div>
+        
+        
+        <div class="API">                              <!--Javascript Validation-->
+          <h2>JavaScript Validation</h2> 
+        
+        <p>Enter a number and click OK:</p>
+
+        <input id="id1" type="number" min="100" max="300" required>
+        <button onclick="myFunction()">OK</button>
+        
+        <p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+        
+        <p id="demo"></p>
+        </div>
+       
+
+
+    <script src="./app.js"></script> <!-- linked javascript to HTML page -->
+
+    
+</body>
+</html>
